@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tell Me More</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact Me</a> |
+            <a href="tell_me_more.html">Tell Me More</a>
+        </nav>
+        <main>
+            <hr>
+            <h1>All About You!</h1>
+            <form action="https://formspree.io/mgautreaux13@yahoo.com" method="POST">
+                <div>
+                  <label for="first_name">First Name</label>
+                  <input type="text" name="first_name" placeholder="First Name" autocomplete="off">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="last_name" placeholder="Last Name" autocomplete="off">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" placeholder="youremail@email.com" autocomplete="off">
+                  <label for="date_of_birth">Date of Birth</label>
+                  <input type="date" name="date_of_birth">
+                </div>
+                <br>
+                <div>
+                  <label for="code_affinity">How Much Do You Like to Code?</label>
+                  <input type="range" name="code_affinity" min="0" max="100" value="50">
+                </div>
+                <br>
+                <div>
+                  <label>Skills (check any that apply)</label>
+                  <input type="checkbox" name="html" value="true">
+                  <label for="html">HTML</label>
+                  <input type="checkbox" name="css" value="true">
+                  <label for="css">CSS</label>
+                  <input type="checkbox" name="git" value="true">
+                  <label for="git">Git</label>
+                </div>
+                <br>
+                <div>
+                  <label for="favorite_language">Favorite Language</label>
+                  <select name="favorite_language">
+                    <option value="">Select a language</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                  </select>
+                </div>
+                <br>
+                <div>
+                  <label for="favorite_browser">Favorite Browser</label>
+                  <input list="browsers" name="favorite_browser">
+                  <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    </option><option value="Firefox">
+                    </option><option value="Chrome">
+                    </option><option value="Safari">
+                  </option></datalist>
+                </div>
+                <br>
+                <div>
+                  <label>White Space:</label>
+                  <input type="radio" name="tabs_or_spaces" value="tabs">
+                  <label for="tabs">Tabs</label>
+                  <input type="radio" name="tabs_or_spaces" value="spaces" checked="">
+                  <label for="spaces">Spaces</label>
+                </div>
+                <br>
+                <div>
+                  <label for="indentation">How Many Spaces Should a Tab Represent?</label>
+                  <input type="number" name="indentation" min="2" step="2" value="2">
+                </div>
+                <br>
+                <div>
+                  <label for="favorite_color">Favorite Web Color</label>
+                  <input type="color" name="favorite_color">
+                </div>
+                <br>
+                <button type="submit">Send</button>
+                <input type="reset">
+            </form>
+        </main>
+    </body>
+</html>
